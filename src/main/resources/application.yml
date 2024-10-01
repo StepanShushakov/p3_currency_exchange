@@ -20,4 +20,6 @@ spring:
         show_sql: true
         hbm2ddl:
           auto: none
-
+cbr:
+  url: https://cbr.ru/scripts/XML_daily.asp
+  checkFrequency: 3600000

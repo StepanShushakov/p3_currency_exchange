@@ -3,9 +3,9 @@ package ru.skillbox.currency.exchange.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.skillbox.currency.exchange.dto.CurrenciesDto;
-import ru.skillbox.currency.exchange.dto.CurrencyDto;
-import ru.skillbox.currency.exchange.entity.Currency;
+import ru.skillbox.currency.exchange.model.dto.CurrenciesDto;
+import ru.skillbox.currency.exchange.model.dto.CurrencyDto;
+import ru.skillbox.currency.exchange.model.entity.Currency;
 import ru.skillbox.currency.exchange.mapper.CurrencyMapper;
 import ru.skillbox.currency.exchange.repository.CurrencyRepository;
 

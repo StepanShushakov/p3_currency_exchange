@@ -25,6 +25,11 @@
 
 Подключение к интернету для получения курсов валют
 
+### Настройки сервиса
+
+В файле настроек application.yml указывается ссылка на источник данных о курсах
+валют (https://cbr.ru/scripts/XML_daily.asp) и частота их обновления.
+
 ## Полезные команды
 
 ### Запуск контейнера с базой данных
@@ -68,3 +73,4 @@ curl --request GET \
 curl --request GET \
 --url http://localhost:8080/api/currency/convert?value=100&numCode=840
 ```
+

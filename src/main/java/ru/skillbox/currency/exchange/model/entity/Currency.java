@@ -1,4 +1,4 @@
-package ru.skillbox.currency.exchange.entity;
+package ru.skillbox.currency.exchange.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

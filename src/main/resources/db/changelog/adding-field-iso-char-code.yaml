@@ -4,4 +4,6 @@ databaseChangeLog:
       author: Shushakov.SV
       changes:
         - sql:
-            sql: alter table currency add iso_char_code char(3);
+            sql:
+              alter table currency add iso_char_code char(3);
+              create index iso_char_code_idx on currency (iso_char_code);

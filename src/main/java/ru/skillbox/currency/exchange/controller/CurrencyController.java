@@ -3,8 +3,8 @@ package ru.skillbox.currency.exchange.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.skillbox.currency.exchange.dto.CurrenciesDto;
-import ru.skillbox.currency.exchange.dto.CurrencyDto;
+import ru.skillbox.currency.exchange.model.dto.CurrenciesDto;
+import ru.skillbox.currency.exchange.model.dto.CurrencyDto;
 import ru.skillbox.currency.exchange.service.CurrencyService;
 
 @RestController
