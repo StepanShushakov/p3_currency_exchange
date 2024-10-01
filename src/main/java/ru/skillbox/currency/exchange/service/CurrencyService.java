@@ -3,6 +3,7 @@ package ru.skillbox.currency.exchange.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import ru.skillbox.currency.exchange.dto.CurrenciesDto;
 import ru.skillbox.currency.exchange.dto.CurrencyDto;
 import ru.skillbox.currency.exchange.entity.Currency;
 import ru.skillbox.currency.exchange.mapper.CurrencyMapper;
@@ -19,6 +20,10 @@ public class CurrencyService {
         log.info("CurrencyService method getById executed");
         Currency currency = repository.findById(id).orElseThrow(() -> new RuntimeException("Currency not found with id: " + id));
         return mapper.convertToDto(currency);
+    }
+
+    public CurrenciesDto getAll() {
+        return new CurrenciesDto(repository.findAll().stream().map(mapper::convertToSimpleDto).toList());
     }
 
     public Double convertValue(Long value, Long numCode) {

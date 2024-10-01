@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: adding_field_iso_let_code
+      author: Shushakov.SV
+      changes:
+        - sql:
+            sql: alter table currency add iso_char_code char(3);
